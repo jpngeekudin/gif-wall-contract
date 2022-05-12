@@ -1,0 +1,15 @@
+[features]
+seeds = false
+[programs.devnet]
+buildspace_solana = "CVN6uzo9c44fc4fRSwdXdfXmJpf4KigULzJdHCcVjotK"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "devnet"
+wallet = "/home/piramore/.config/solana/id.json"
+
+[scripts]
+#test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
+test = "npx ts-node tests/buildspace-solana.ts"
